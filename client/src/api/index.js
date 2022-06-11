@@ -1,7 +1,11 @@
 import axios from 'axios';
+import dotenv from 'dotenv';
+dotenv.config();
+const SERVER_URL = process.env.SERVER_URL;
+console.log(SERVER_URL);
 
 const API = axios.create({
-  baseURL: 'http://silkroadsss.herokuapp.com'
+  baseURL: SERVER_URL
 });
 
 API.interceptors.request.use((req) => {

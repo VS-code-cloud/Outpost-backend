@@ -15,6 +15,7 @@ const userSchema = mongoose.Schema({
   stripe_account_id: '',
   stripe_seller: {},
   stripeSession: {},
+  communities: { type: Array}
 });
 
 export default mongoose.model('User', userSchema);

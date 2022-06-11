@@ -19,6 +19,7 @@ const postSchema = new Schema(
       default: new Date(),
     },
     amount: { type: Number },
+    communities: {type: Array}
   },
   { timeStamps: true }
 );
